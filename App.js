@@ -1,16 +1,20 @@
 import React from 'react';
 import { SafeAreaView, StyleSheet } from 'react-native';
-import CalculatorScreen from './src/screens/CalculatorScreen';
+import Calculator from './src/components/Calculator';
 
-const App = () => (
+const App = () => {
+  return (
     <SafeAreaView style={styles.container}>
-      <CalculatorScreen />
+      <Calculator />
     </SafeAreaView>
-);
+  );
+};
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
   },
 });
 

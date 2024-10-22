@@ -1,25 +1,30 @@
 import React from 'react';
 import { TouchableOpacity, Text, StyleSheet } from 'react-native';
 
-const Button = ({ onPress, text, style }) => (
-    <TouchableOpacity onPress={onPress} style={[styles.button, style]}>
-        <Text style={styles.buttonText}>{text}</Text>
+const Button = ({ value, onClick }) => {
+  return (
+    <TouchableOpacity style={styles.button} onPress={() => onClick(value)}>
+      <Text style={styles.buttonText}>{value}</Text>
     </TouchableOpacity>
-);
+  );
+};
 
 const styles = StyleSheet.create({
-    button: {
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-        margin: 5,
-        backgroundColor: '#333',
-        borderRadius: 5,
-    },
-    buttonText: {
-        fontSize: 30,
-        color: '#fff',
-    },
+  button: {
+    width: '22%', 
+    height: 80,
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderRadius: 10,
+    backgroundColor: '#3c3c3c', 
+    margin: 5,
+    elevation: 3,
+  },
+  buttonText: {
+    fontSize: 24,
+    color: '#ffffff',
+    fontWeight: 'bold',
+  },
 });
 
 export default Button;

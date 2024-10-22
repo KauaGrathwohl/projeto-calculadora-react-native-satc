@@ -1,4 +1,27 @@
 {
-  "name": "CalculadoraApp",
-  "displayName": "CalculadoraApp"
+  "expo": {
+    "name": "blissful-green-pudding",
+    "slug": "snack-dd403a3a-b041-4fa8-bde7-c7184273c77b",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
 }
